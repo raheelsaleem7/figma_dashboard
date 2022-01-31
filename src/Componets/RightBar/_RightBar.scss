@@ -1,0 +1,140 @@
+@import '../../Assests/Variable/Variable';
+
+.right-bar {
+       width: 17%;
+       padding: 9px;
+       @media screen and (max-width:480px) {
+           display: none;
+    }
+    @media screen and (max-width:768px) {
+        display: none;
+     }
+    .bar-container {
+        .calender {
+            .react-calendar {
+                border-radius: 16px;
+            border: none;
+            box-shadow: 0 0 10px #d4c8c8;
+            .react-calendar__navigation {
+              background-color: $sidebarClr;
+              border: none;
+              border-radius: 16px 16px 0 0px;
+             button {
+               color: white;
+               transition: .5s;
+               cursor: pointer;
+
+               &:hover {
+                   background: black;
+               }
+            }
+            .react-calendar__navigation button:enabled:hover, .react-calendar__navigation button:enabled:focus {
+                background: black;
+            }
+        }
+        .react-calendar__month-view__weekdays {
+            color: $textClr;
+            text-transform: none;
+            .react-calendar__month-view__weekdays__weekday {
+
+                abbr {
+                    text-decoration:none ;
+                    font-size: 9px;
+                }
+            }
+            
+        }
+        .react-calendar__month-view__days { 
+
+     button {
+            font-size: 10px;
+            font-family: unset;
+        }
+        .react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+            background-color: #E4E6FF;
+            color: $sidebarClr;
+            border-radius: 50%;
+         
+        }
+        .react-calendar__month-view__days__day--weekend {
+            color:black;
+        }
+        .react-calendar__tile--active {
+            background-color: $sidebarClr;
+            color: white;
+            border-radius: 50%;
+            height: 23px !important;
+        }
+        .react-calendar__tile {
+        padding: 0;
+        }
+       
+        }
+    }
+        }
+
+        .menu {
+              background-color: white;
+              box-shadow: 0 0 10px #d4c8c8;
+              border-radius: 6px;
+              padding: 10px;
+              margin-top: 10px;
+            .menu-title {
+                 display: flex;
+                .title { 
+
+                    h4 {
+                        color: $sidebarClr;
+                    } 
+                }
+            }
+            .card {
+                border: 1px solid #E2E2E2;
+                border-radius: 5px;
+                margin-top: 9px;
+                padding: 6px;
+                .card-title {
+                     display: flex;
+                     align-items: center;
+
+                    .card-heading {
+
+                        p {
+                          color: $sidebarClr;
+                          font-weight: 600;
+                        }
+                    }
+                    .card-description {
+                        margin-left: 5px;
+                        p {
+                          color: $textClr;
+                          font-weight: 600;
+                        }
+                    }
+                }
+                span {
+                    font-size: 11px;
+                    color: $textClr;
+                }
+            }
+        }
+        .share {
+            background: $sidebarClr;
+            border-radius: 5px;
+            margin-top: 10px;
+            h4 {
+                color: white;
+                text-align: center;
+            }
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                    .icons {
+                    svg {
+                        padding-left: 9px;
+                    }
+                    }
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+@import '../../../Assests/Variable/Variable';
+
+.main {
+    width:66%;
+    @media screen and (max-width:480px) {
+         width: 100%;
+         display: flex;
+           flex-wrap: nowrap;
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+     
+   }
+    .main-container {
+        padding: 16px;
+        @media screen and (max-width:480px) {
+           align-items: center;
+       }
+        .main-content {
+            align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and (max-width:480px) {
+           flex-wrap: wrap;
+    }
+    @media screen and (max-width:768px) {
+        flex-wrap: wrap;
+ }
+        
+        .main-top {
+            background-color: white;
+            width: 392px;
+            padding: 13px;
+             height: 229px;
+            box-shadow: 0 0 10px #d4c8c8;
+            border-radius: 5px;
+              @media screen and (max-width:480px) {
+           margin-top: 10px;
+       }
+       @media screen and (max-width:768px) {
+        margin-top: 10px;
+    }
+    @media screen and (max-width:1024px) {
+       width: 300px;
+    }
+    @media screen and (max-width:1440px) {
+       margin-left: 6px;
+     }
+        .top-content {
+               display: flex;
+               align-items: center;
+            .for_image {
+
+                img {
+                    width: 58px;
+                }
+            }
+        
+        .description {
+                 margin-left: 16px;
+                 line-height: 16px;
+                 font-size:12px;
+             p {
+                color: $textClr;
+                
+             }
+             h4 {
+              color: $nameClr;
+              
+             }
+             span {
+             color: $simpleText;
+             }
+            }
+        }
+        .weight-btn {
+            margin-top: 17px;
+            button {
+                background-color: $sidebarClr;
+                border: none;
+                outline: none;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: .5s;
+                padding: 13px 21px;
+                margin-right: 10px;
+                font-size:12px;
+                &:hover {
+                   background-color: $btnHover;
+                }
+                @media screen and (max-width:480px) {
+                    padding: 10px 12px !important;
+                 }
+                @media screen and (max-width:1024px) {
+                   padding: 10px 13px !important;
+                }
+                @media screen and (max-width:1440px) {
+                    padding: 10px 19px;
+                 }
+            }
+        }
+        .select {
+            margin-top: 10px;
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px;
+    box-shadow: 0 0 10px #d4c8c8;
+    font-size:12px;
+            .start-text{
+                p {
+                   color: $sidebarClr;
+                }
+            }
+            .text {
+                p{
+            color: $nameClr;
+                }
+            }
+            .for_span {
+                span {
+                   color:$timeClr;
+                }
+                p {
+                    color: $textClr;
+                }
+            }              
+        } 
+
+           .friends {
+               display: flex;
+               align-content: stretch;
+               .friends-name {
+                  h4 {
+                 color: $sidebarClr;
+                 font-size:14px;
+                 margin-top: 2px;
+                 } 
+               }
+               svg {
+                width: 17px;
+                margin-left: 3px;
+               }
+           }
+              .friends-list {
+                   display: flex;
+                   justify-content: space-between;
+                   align-items: center;
+                 .info {
+                    text-align: center;
+                     .friend_name {
+                        h4 {
+                          color: $sidebarClr;
+                          font-size: 12px;
+                        }
+                     }
+                 }
+              }
+          }
+    }
+    .for_charts {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width:480px) { 
+           justify-content: center;
+        }
+        @media screen and (max-width:768px) { 
+            justify-content: center;
+         }
+       
+    .chart {
+        background: white;
+        position: relative;
+        height: 156px;
+        width: 111px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #d4c8c8;
+        margin: 10px;
+        canvas {
+            width: 60px !important;
+            height: 60px !important;
+        }
+        .percentage {
+            position: absolute;
+            top: 33%;
+            p {
+                color: $timeClr;
+            }
+            span {
+                color: $data2;
+            }
+            h6 {
+                color: $data3;
+            }
+        }
+
+        h4 {
+            color: $nameClr;
+            font-family: inherit;
+            opacity: .8;
+            line-height: 26px;
+        }
+        time {
+          color: $textClr;
+          font-size: 11px;
+        }
+    }
+}
+  
+    }
+}

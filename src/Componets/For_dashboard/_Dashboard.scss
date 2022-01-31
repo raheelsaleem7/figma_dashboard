@@ -1,0 +1,108 @@
+@import "../../Assests/Variable/Variable";
+
+.dashboard {
+
+.header {
+    display: none;
+    @media screen and (max-width:480px) {
+      display:flex !important;
+      background: $sidebarClr ;
+      align-items: center !important;
+      justify-content: space-between !important;
+      padding: 10px !important;
+    }
+    @media screen and (max-width:768px) {
+        display:flex;
+        background: $sidebarClr;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+      }
+     .for_ham {
+
+.hamburgur {
+         display: flex;
+         flex-direction: column;
+         padding: 10px;
+  span {
+    @media screen and (max-width:480px) {
+    background: white;
+    width: 26px;
+    height: 3px;
+    margin-top: 4px;
+  }
+  @media screen and (max-width:768px) {
+    background: white;
+    width: 26px;
+    height: 3px;
+    margin-top: 4px;
+  }
+}
+}
+     }
+     
+
+
+  .for_clock {
+
+    .clock {
+        display: none;
+        @media screen and (max-width:480px) {
+            display: block;
+        }
+        @media screen and (max-width:768px) {
+          display: block;
+      }
+        svg {
+            width: 20px;
+            fill:white;
+        }
+    }
+    .active-steps {
+   
+      @media screen and (max-width:480px) {
+      display: block;
+    }
+    @media screen and (max-width:768px) {
+       display: block;
+     }
+    }
+     .not-active {
+       
+      @media screen and (max-width:480px) {
+          display: none;
+      }
+      @media screen and (max-width:768px) {
+         display: none;
+     }
+    }
+  }
+
+
+}
+
+   .all_component {
+       display: flex;
+       margin: 0 auto;
+       max-width: 1440px;
+       .active-steps {
+   
+        @media screen and (max-width:480px) {
+        display: block;
+      }
+      @media screen and (max-width:768px) {
+         display: block;
+       }
+    }
+    .not-active {
+         
+      @media screen and (max-width:480px) {
+          display: none;
+      }
+      @media screen and (max-width:768px) {
+         display: none;
+     }
+    }
+   }
+  
+  }   
