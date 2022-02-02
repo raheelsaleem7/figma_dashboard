@@ -4,6 +4,8 @@ import avatar from '../../../images/avatar.png'
 import friend1 from '../../../images/avatar_friends.png'
 import friend2 from '../../../images/ava2.png'
 import friend3 from '../../../images/avt3.png'
+import graph from '../../../images/cards.png'
+import RightBar from '../../RightBar/RightBar'
 import Graph from '../Main/Graph/Graph'
 import friend5 from '../../../images/avt5.png'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
@@ -34,8 +36,8 @@ function Main() {
           '#F53126',
         ],
        
-        maxBarThickness: 100,
-        cutout: 40,
+        maxBarThickness: 120,
+        cutout: 35,
             },
             
     ],
@@ -64,8 +66,8 @@ function Main() {
           '#1CC336',
         ],
        
-        maxBarThickness: 100,
-        cutout: 40,
+        maxBarThickness: 120,
+        cutout: 35,
             },
             
     ],
@@ -93,8 +95,8 @@ function Main() {
           '#0070F5',
         ],
        
-        maxBarThickness: 100,
-        cutout: 40,
+        maxBarThickness: 120,
+        cutout: 35,
             },
             
     ],
@@ -102,6 +104,7 @@ function Main() {
   return (
      <div className='main'>
        <div className='main-container'>
+         <div className='center_div'>
          <div className='main-content'>
          <div className='main-top'>
           <div className="top-content">
@@ -255,6 +258,8 @@ function Main() {
 
 
         </div>
+
+        <div className='card_group'>
         <div className='for_charts'>
         <div className='chart'>
          <div className='percentage'>
@@ -281,11 +286,41 @@ function Main() {
         <time>577/850</time>
         </div>
         </div>
+           
+           <div className='elements'>
+      <div className='element_content'>
+            <div className='active_head'>
+              <div className='element_title'>
+             <h3>Activity</h3>
+               </div>
+               <div className='for_svg'>
+               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.67004 12.0001L3.17004 12.0001L3.67004 12.0001ZM12.67 3.00006L12.67 3.50006L12.67 3.00006ZM21.67 12.0001L21.17 12.0001L21.67 12.0001ZM12.67 21.0001L12.67 21.5001L12.67 21.0001ZM11.146 15.2463C10.9508 15.4416 10.9508 15.7581 11.146 15.9534C11.3413 16.1487 11.6579 16.1487 11.8532 15.9534L11.146 15.2463ZM15.0996 11.9998L15.4532 12.3534C15.6484 12.1581 15.6484 11.8416 15.4532 11.6463L15.0996 11.9998ZM11.8532 8.04629C11.6579 7.85103 11.3413 7.85103 11.146 8.04629C10.9508 8.24155 10.9508 8.55813 11.146 8.7534L11.8532 8.04629ZM4.17004 12.0001C4.17004 7.30564 7.97562 3.50006 12.67 3.50006L12.67 2.50006C7.42334 2.50006 3.17004 6.75336 3.17004 12.0001L4.17004 12.0001ZM12.67 3.50006C17.3645 3.50006 21.17 7.30564 21.17 12.0001L22.17 12.0001C22.17 6.75336 17.9167 2.50006 12.67 2.50006L12.67 3.50006ZM21.17 12.0001C21.17 16.6945 17.3645 20.5001 12.67 20.5001L12.67 21.5001C17.9167 21.5001 22.17 17.2468 22.17 12.0001L21.17 12.0001ZM12.67 20.5001C7.97562 20.5001 4.17004 16.6945 4.17004 12.0001L3.17004 12.0001C3.17004 17.2468 7.42334 21.5001 12.67 21.5001L12.67 20.5001ZM11.8532 15.9534L15.4532 12.3534L14.746 11.6463L11.146 15.2463L11.8532 15.9534ZM15.4532 11.6463L11.8532 8.04629L11.146 8.7534L14.746 12.3534L15.4532 11.6463Z" fill="#6556D9"/></svg>
+               </div>
+            </div>
+            <time>03.01.21 12:47-14:01</time>
+               
+               <div className='venue'>
+                 <h4>Sokolniki Park</h4>
+                 <span>Jogging <strong> 15 km </strong></span>
+                 <span>Steps  <strong> 7523 </strong></span>
+                 <span>Calories  <strong> 524</strong></span>
+               </div>
+
+           </div>
+           <div className='calender_image'>
+              <img src={graph} />
+           </div>
+       </div>
+           </div>
+
+
+
     
       <div>
      <Graph />
       </div>
-
+      </div>
+           
        </div>
      </div>
      

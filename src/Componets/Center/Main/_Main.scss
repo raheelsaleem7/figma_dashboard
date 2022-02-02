@@ -13,13 +13,22 @@
    }
     .main-container {
         padding: 16px;
+        display: flex;
         @media screen and (max-width:480px) {
            align-items: center;
        }
+       .center_div{
+           width: 100%;
+
+           @media screen and (max-width:480px) {
+        
+         flex-wrap: wrap;
+        }
+       
         .main-content {
             align-items: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     @media screen and (max-width:480px) {
            flex-wrap: wrap;
     }
@@ -29,7 +38,7 @@
         
         .main-top {
             background-color: white;
-            width: 392px;
+            width: 50%;
             padding: 13px;
              height: 229px;
             box-shadow: 0 0 10px #d4c8c8;
@@ -159,11 +168,30 @@
               }
           }
     }
-    .for_charts {
+
+    .card_group {
         display: flex;
         align-items: center;
+        margin-top: 10px;
+        justify-content: center;
+        @media screen and (max-width:480px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        @media screen and (max-width:768px) {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    .for_charts {
+        width: 50%;
+        display: flex;
+        align-items: center;
+       
         @media screen and (max-width:480px) { 
-           justify-content: center;
+           justify-content: center !important;
+           width: fit-content !important;
         }
         @media screen and (max-width:768px) { 
             justify-content: center;
@@ -172,7 +200,7 @@
     .chart {
         background: white;
         position: relative;
-        height: 156px;
+        height: 185px;
         width: 111px;
         display: flex;
         justify-content: center;
@@ -187,15 +215,18 @@
         }
         .percentage {
             position: absolute;
-            top: 33%;
+            top: 35%;
             p {
                 color: $timeClr;
+                
             }
             span {
                 color: $data2;
             }
             h6 {
                 color: $data3;
+                font-size: 14px;
+                font-weight: 600;
             }
         }
 
@@ -204,13 +235,70 @@
             font-family: inherit;
             opacity: .8;
             line-height: 26px;
+           
         }
         time {
           color: $textClr;
           font-size: 11px;
         }
     }
+     }
+    .elements {
+             background: white;
+             width: 50%;
+             display: flex;
+             align-items: center;
+             justify-content: space-evenly;
+             padding: 6px;
+             box-shadow: 0 0 10px #d4c8c8;
+             border-radius: 5px;
+             @media screen and (max-width:480px) {
+                 width: fit-content;
+             }
+   
+     .element_content {
+        line-height: 23px;
+        .active_head {
+                display: flex;
+                align-items: center;
+            .element_title {
+
+                h3 {
+                    color: $sidebarClr;
+                    font-size: 14px;
+                }
+            }
+            .for_svg {
+
+                svg {
+                    margin-top: 9px;
+                    margin-left: 5px;
+                
+                }
+            }
+        }
+          time {
+             color: $textClr;
+             font-size: 12px;
+          }
+          .venue {
+            display: flex;
+            flex-direction: column;
+            h4 {
+                 color: $sidebarClr;
+                 font-size: 14px;
+            }
+            span {
+                color: $textClr;
+                font-size: 12px;
+                strong {
+                    color: $sidebarClr;
+                }
+            }
+          }
+    }
 }
-  
+    }
+}
     }
 }

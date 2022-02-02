@@ -1,8 +1,8 @@
 @import '../../Assests/Variable/Variable';
 
 .right-bar {
-       width: 17%;
-       padding: 9px;
+       padding: 1px 6px;
+       width:17%;
        @media screen and (max-width:480px) {
            display: none;
     }
@@ -54,7 +54,7 @@
             background-color: #E4E6FF;
             color: $sidebarClr;
             border-radius: 50%;
-         
+           
         }
         .react-calendar__month-view__days__day--weekend {
             color:black;
@@ -63,7 +63,7 @@
             background-color: $sidebarClr;
             color: white;
             border-radius: 50%;
-            height: 23px !important;
+            height: 25px !important;
         }
         .react-calendar__tile {
         padding: 0;

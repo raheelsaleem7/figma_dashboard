@@ -22,9 +22,9 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 10px;
       height: 800px;
         .title_logo {
+          padding: 16px 1px;
             svg {
              @media screen and (max-width:1024px) {
                width: 114px;
@@ -36,19 +36,23 @@
           margin-top: 59px;
         width: 100%;
         .dash_content {
-            display: flex;
-            align-items: center;
-             padding: 12px 1px;
-            width: 100%;
-            cursor: pointer;
+          display: flex;
+          padding: 3px 30px;
+          align-items: center;
+          justify-content: start;
+          width: 100%;
+          cursor: pointer;
+          margin-top: 25px;
             &:hover {
-              background-color: $dashHover;
-              border-radius: 12px;
+              background-color: white;
               width: 100%;
-            
+              
             .for_gap {
-              svg {fill:$sidebarClr};
-               h4 {color: $sidebarClr};
+              h4 {color: $sidebarClr};
+                svg {
+              fill: none;
+             stroke: $sidebarClr !important;
+                }
             } 
              }      
               .for_gap {
@@ -59,7 +63,7 @@
                .for_svg {
                 svg {
                   width: 15px;
-                  fill: white;
+                  margin-top: 5px;                       
                  }
                 }
                 h4 {
