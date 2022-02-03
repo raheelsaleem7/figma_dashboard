@@ -38,6 +38,11 @@ function RightBar() {
     speed:"Dinner",
     span:"steamed fish - 150 gr., broccoli - 100 gr., black tea.",
 },
+{
+  time:"07:00",
+  speed:"Breakfast",
+  span:"boiled buckwheat - 50 gr., beef - 150 gr., fresh cabbage salad - 100 gr., vegetable juice.",
+},
     ]
   return ( 
       <div className='right-bar'>

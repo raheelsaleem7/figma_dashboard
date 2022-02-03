@@ -1,3 +1,62 @@
+@import '../../../../Assests/Variable/Variable';
+
+.graph {
+  background: white;
+  border-radius:10px;
+    box-shadow: 0 0 10px #d4c8c8;
+  .graph_header {
+           background: $sidebarClr;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 15px;
+           border-radius: 10px 10px 0 0;
+    .graph_title {
+      h4 {
+         color: white;
+      }
+    }
+    .weight {
+
+      button {
+            background: transparent;
+            border: 1px solid white;
+            outline: none;
+            color: white;
+            padding: 8px 11px;
+            border-radius: 5px;
+            margin-left: 11px;
+            font-family: sans-serif;
+            font-weight: 800;
+            cursor: pointer;
+            transition: .5s;
+            &:hover {
+              background: white;
+              color: $sidebarClr;
+            }
+      }
+    }
+    .months {
+      display: flex;
+      align-items: center;
+      .time {
+
+      span {
+        color: white;
+      }
+    }
+    .down {
+      margin-left: 5px;
+      margin-top: 4px;
+      svg {
+        width: 23px;
+      }
+    }
+    }
+  }
+}
+
+
 .apexcharts-zoom-icon, .apexcharts-zoomin-icon, .apexcharts-zoomout-icon,
  .apexcharts-reset-icon, .apexcharts-pan-icon, .apexcharts-selection-icon,
   .apexcharts-menu-icon, .apexcharts-toolbar-custom-icon {

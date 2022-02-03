@@ -1,7 +1,7 @@
 @import '../../Assests/Variable/Variable';
 
 .right-bar {
-       padding: 1px 6px;
+       padding: 23px 6px;
        width:17%;
        @media screen and (max-width:480px) {
            display: none;
@@ -79,6 +79,7 @@
               border-radius: 6px;
               padding: 10px;
               margin-top: 10px;
+              height: 622px;
             .menu-title {
                  display: flex;
                 .title { 
