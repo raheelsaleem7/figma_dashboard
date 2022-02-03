@@ -1,7 +1,10 @@
 import React from 'react';
 import './_SideBar.scss'
+import Switch from '@mui/material/Switch';
+
 
 function SideBar() {
+  const label = { inputProps: { 'aria-label': 'Switch demo' } };
   const dash = [
     {
       text:"Medcard", 
@@ -92,10 +95,7 @@ function SideBar() {
                         </div>
                         <div className='switch2'>
                        
-                        <label class="switch">
-                        <input type="checkbox" checked />
-                        <span class="slider round"></span>
-                        </label>
+                        <Switch {...label} color='default' />
     
                         </div>
                      </div>
