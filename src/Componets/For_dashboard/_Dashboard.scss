@@ -85,6 +85,11 @@
        display: flex;
        margin: 0 auto;
        max-width: 1440px;
+       @media screen and (max-width:1172px) {
+        margin: 0;
+    
+      }
+       
        .active-steps {
    
         @media screen and (max-width:480px) {
@@ -96,6 +101,11 @@
     }
     .not-active {
           width: 17%;
+          @media screen and (max-width:1172px) {
+          
+            width: 20%;
+          }
+           
       @media screen and (max-width:480px) {
           display: none;
       }

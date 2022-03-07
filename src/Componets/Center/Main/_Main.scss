@@ -2,6 +2,10 @@
 
 .main {
     width:66%;
+    @media screen and (max-width:1172px) {
+          
+        width: 60%;
+      }
     @media screen and (max-width:480px) {
          width: 100%;
          display: flex;
@@ -51,6 +55,7 @@
     }
     @media screen and (max-width:1024px) {
        width: 300px;
+       height: 217px;
     }
     @media screen and (max-width:1440px) {
        margin-left: 6px;
@@ -71,14 +76,25 @@
                  font-size:12px;
              p {
                 color: $textClr;
-                
+                font-style: normal;
+                font-weight: 600;
+                font-family: $open;
+                font-size: 12px;
              }
              h4 {
               color: $nameClr;
-              
+              font-weight: 600;
+              font-size: 20px;
+              font-style: normal;
+              font-family: $open;
+              line-height: 130%;
              }
              span {
              color: $simpleText;
+             font-style: normal;
+             font-weight: 600;
+             font-family: $open;
+             font-size: 12px;
              }
             }
         }
@@ -95,15 +111,24 @@
                 padding: 13px 28px;
                 margin-right: 10px;
                 font-size:12px;
+                font-style: normal;
+                font-weight: 600;
+                font-family: $open;
                 &:hover {
                    background-color: $btnHover;
                 }
                 @media screen and (max-width:480px) {
                     padding: 10px 12px !important;
                  }
+                 @media screen and (max-width:768px) {
+                    padding: 10px 12px !important;
+                  }
                 @media screen and (max-width:1024px) {
-                   padding: 10px 13px !important;
+                   padding: 7px 8px !important;
                 }
+                @media screen and (max-width:1172px) {
+                  padding: 10px 15px !important;
+                  }
                 @media screen and (max-width:1440px) {
                     padding: 10px 28px;
                  }
@@ -120,19 +145,31 @@
             .start-text{
                 p {
                    color: $sidebarClr;
+                   font-style: normal;
+                   font-weight: 600;
+                   font-family: $open;
                 }
             }
             .text {
                 p{
             color: $nameClr;
+            font-style: normal;
+            font-weight: 600;
+            font-family: $open;
                 }
             }
             .for_span {
                 span {
                    color:$timeClr;
+                   font-style: normal;
+                   font-weight: 600;
+                   font-family: $open;
                 }
                 p {
                     color: $textClr;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-family: $open;
                 }
             }              
         } 
@@ -145,6 +182,9 @@
                  color: $sidebarClr;
                  font-size:14px;
                  margin-top: 2px;
+                 font-style: normal;
+                 font-weight: 600;
+                 font-family: $open;
                  } 
                }
                svg {
@@ -157,11 +197,25 @@
                    justify-content: space-between;
                    align-items: center;
                  .info {
+                     .friend_pic {
+
+                        img  {
+                            @media screen and (max-width:1024px) {
+                               width: 50%;
+                             }
+                        }
+                     }
                     text-align: center;
                      .friend_name {
                         h4 {
                           color: $sidebarClr;
                           font-size: 12px;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-family: $open;
+                          @media screen and (max-width:1024px) {
+                           font-size: 10px;
+                         }
                         }
                      }
                  }
@@ -266,6 +320,9 @@
                 h3 {
                     color: $sidebarClr;
                     font-size: 14px;
+                    @media screen and (max-width:1024px) {
+                        font-size: 12px;
+                      }
                 }
             }
             .for_svg {
@@ -280,6 +337,9 @@
           time {
              color: $textClr;
              font-size: 12px;
+             @media screen and (max-width:1024px) {
+               font-size: 10px;
+             }
           }
           .venue {
             display: flex;
@@ -287,12 +347,21 @@
             h4 {
                  color: $sidebarClr;
                  font-size: 14px;
+                 @media screen and (max-width:1024px) {
+                    font-size: 12px;
+                  }
             }
             span {
                 color: $textClr;
                 font-size: 12px;
+                @media screen and (max-width:1024px) {
+                    font-size: 10px;
+                  }
                 strong {
                     color: $sidebarClr;
+                    @media screen and (max-width:1024px) {
+                        font-size: 10px;
+                      }
                 }
             }
           }

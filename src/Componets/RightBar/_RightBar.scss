@@ -3,6 +3,10 @@
 .right-bar {
        padding: 23px 6px;
        width:17%;
+       @media screen and (max-width:1172px) {
+          
+        width: 20%;
+      }
        @media screen and (max-width:480px) {
            display: none;
     }
@@ -23,6 +27,9 @@
                color: white;
                transition: .5s;
                cursor: pointer;
+               font-style: normal;
+               font-weight: 600;
+               font-family: $open;
 
                &:hover {
                    background: black;
@@ -48,7 +55,9 @@
 
      button {
             font-size: 10px;
-            font-family: unset;
+            font-style: normal;
+            font-weight: 600;
+            font-family: $open;
         }
         .react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
             background-color: #E4E6FF;
@@ -86,6 +95,9 @@
 
                     h4 {
                         color: $sidebarClr;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-family: $open;
                     } 
                 }
             }
@@ -103,6 +115,9 @@
                         p {
                           color: $sidebarClr;
                           font-weight: 600;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-family: $open;
                         }
                     }
                     .card-description {
@@ -110,12 +125,18 @@
                         p {
                           color: $textClr;
                           font-weight: 600;
+                          font-style: normal;
+                          font-weight: 600;
+                          font-family: $open;
                         }
                     }
                 }
                 span {
                     font-size: 11px;
                     color: $textClr;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-family: $open;
                 }
             }
         }
@@ -126,6 +147,9 @@
             h4 {
                 color: white;
                 text-align: center;
+                font-style: normal;
+                font-weight: 600;
+                font-family: $open;
             }
             .social-icons {
                 display: flex;
